@@ -17,8 +17,8 @@ public class TextArrs {
 
 
 
-
-    public void Sravn(){
+    //4. Найти самую короткую и самую длинную строки. Вывести найденные строки и их длину.
+    public void sravn(){
 
        String stringMax = arrayStrings[0];
         String stringMin = arrayStrings[0];
@@ -38,13 +38,38 @@ public class TextArrs {
         System.out.println("Самая короткая строка:  " + stringMin + " и ее длинна:  " + stringMin.length() + " симоволов");
         System.out.println("Самая длинная строка:   " + stringMax + " и ее длинна:  " + stringMax.length() + " симоволов");
     }
+
+    //5. Упорядочить и вывести строки в порядке возрастания (убывания) значений их длины.
+    public void filterFromLittleToBig() {
+        for (int i = arrayStrings.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+
+                if (arrayStrings[j].length() > arrayStrings[j + 1].length()) {
+                    String tmp = arrayStrings[j];
+                    arrayStrings[j] = arrayStrings[j + 1];
+                    arrayStrings[j + 1] = tmp;
+                }
+            }
+        }
+        for (int i = 0; i < arrayStrings.length; i++) {
+            System.out.println(arrayStrings[i]);
+
+        }
+
+    }
+
+
+
 }
+
+
+
 
 class Realization1{
 
     public static void main(String[] args) {
         TextArrs t = new TextArrs();
-        t.Sravn();
+
 
 
 
