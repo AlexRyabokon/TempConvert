@@ -36,8 +36,7 @@ public class TextArrs {
 
         }
         System.out.println("Самая короткая строка:  " + stringMin + " и ее длинна:  " + stringMin.length() + " симоволов");
-        System.out.println("Самая длинная строка:" +
-                "git aagit rmrff   " + stringMax + " и ее длинна:  " + stringMax.length() + " симоволов");
+        System.out.println("Самая длинная строка:   " + stringMax + " и ее длинна:  " + stringMax.length() + " симоволов");
     }
 }
 
