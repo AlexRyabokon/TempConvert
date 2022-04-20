@@ -101,9 +101,18 @@ public void someMeth() {
         String[] arrayOfchars = TextArrs.separateString(arrayStrings[i]); // слова в String
 
         for (int j = 0; j < arrayOfchars.length; j++) {
-            char[] c = toSymbolsWord(arrayOfchars[j]); // слова в массиве char
-            int charCode = (int) c[j];
-            System.out.println(charCode); //zatup
+            char[] c = toSymbolsWord(arrayOfchars[j]);        //                  слова в массиве char
+            String s1 = arrayOfchars[j].concat(" - ");
+            System.out.print(" // "+s1); //
+            for (int k = 0; k < c.length; k++) {              //  вывел каждое слово отдельно
+                int charCode = (int) c[k];                    //
+
+                    System.out.print(charCode + " ");
+
+
+
+            }
+
 //
              }
         }
