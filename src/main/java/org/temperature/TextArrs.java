@@ -104,7 +104,7 @@ public void someMeth() {
             char[] c = toSymbolsWord(arrayOfchars[j]); // слова в массиве char
             int charCode = (int) c[j];
             System.out.println(charCode); //zatup
-
+//
              }
         }
     }
