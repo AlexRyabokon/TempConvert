@@ -86,25 +86,23 @@ public class TextArrs {
 
 
     public void someMeth() {
+
         A:
         for (int i = 0; i < arrayStrings.length; i++) {
             String delimeter = " "; // Разделитель
-            String[] subStr = arrayStrings[i].split(delimeter);
-            //System.out.println(arrayStrings[i]);
+            String[] subStr = arrayStrings[i].split(delimeter); // разделил на слова в стринг
 
             B:
             for (int j = 0; j < subStr.length; j++) {
                 char[] arr = subStr[j].toCharArray();        //                  слова в массиве char
-                //System.out.println("\n"+subStr[j]);
 
                 C:
                 for (int k = 0; k < arr.length; k++) {
 
                     int min = arr[k];
                     int min_i = k;
-
-                    for (int l = k+1; l < arr.length; l++) {
-                        //Если находим, запоминаем его индекс
+                    D:
+                    for (int l = k + 1; l < arr.length; l++) {
                         if (arr[l] < min) {
                             min = arr[l];
                             min_i = l;
@@ -116,19 +114,16 @@ public class TextArrs {
                         arr[k] = arr[min_i];
                         arr[min_i] = tmp;
                     }
-                    String myStr = new String(arr);
-                    String finalStr;
-                    if (myStr.equals(subStr[j])){
 
-                        System.out.println(subStr[j] +"  "+ myStr);
+                }
+                String strf = new String(arr);
+                if (strf.equals(subStr[j].trim()) && strf.length()>3) {
+                    System.out.println(strf);
 
-
-                    }
 
                 }
             }
         }
-
     } //вариант 1
 
     public void someMeth1() {
@@ -162,7 +157,7 @@ class Realization1{
     TextArrs t = new TextArrs();
     t.someMeth();
         System.out.println("-----------------------------------------------------------------------------");
-    t.someMeth1();
+
 
 
     }
