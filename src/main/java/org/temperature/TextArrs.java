@@ -85,16 +85,60 @@ public class TextArrs {
     //7. Найти слово, символы в котором идут в строгом порядке возрастания их кодов.Если таких слов несколько, найти первое из них.
 
 
-
-
     public void someMeth() {
+        A:
+        for (int i = 0; i < arrayStrings.length; i++) {
+            String delimeter = " "; // Разделитель
+            String[] subStr = arrayStrings[i].split(delimeter);
+            //System.out.println(arrayStrings[i]);
+
+            B:
+            for (int j = 0; j < subStr.length; j++) {
+                char[] arr = subStr[j].toCharArray();        //                  слова в массиве char
+                //System.out.println("\n"+subStr[j]);
+
+                C:
+                for (int k = 0; k < arr.length; k++) {
+
+                    int min = arr[k];
+                    int min_i = k;
+
+                    for (int l = k+1; l < arr.length; l++) {
+                        //Если находим, запоминаем его индекс
+                        if (arr[l] < min) {
+                            min = arr[l];
+                            min_i = l;
+                        }
+                    }
+
+                    if (k != min_i) {
+                        char tmp = arr[k];
+                        arr[k] = arr[min_i];
+                        arr[min_i] = tmp;
+                    }
+                    String myStr = new String(arr);
+                    String finalStr;
+                    if (myStr.equals(subStr[j])){
+
+                        System.out.println(subStr[j] +"  "+ myStr);
+
+
+                    }
+
+                }
+            }
+        }
+
+    } //вариант 1
+
+    public void someMeth1() {
         for (int i = 0; i < arrayStrings.length; i++) {
             String delimeter = " "; // Разделитель
             String[] subStr = arrayStrings[i].split(delimeter);;
 
             for (int j = 0; j < subStr.length; j++) {
                 char[] c = subStr[j].toCharArray();        //                  слова в массиве char
-               System.out.println("\n"+subStr[j]);
+                System.out.println("\n"+subStr[j]);
                 for (int k = 0; k < c.length; k++) {              //  вывел каждое слово отдельно
                     int charCode = (int) c[k];                    //
 
@@ -104,9 +148,8 @@ public class TextArrs {
                 }
             }
         }
-    }
+    } // просто вывод слов с кодами его чаров
 }
-
 
 
 
@@ -118,6 +161,8 @@ class Realization1{
 
     TextArrs t = new TextArrs();
     t.someMeth();
+        System.out.println("-----------------------------------------------------------------------------");
+    t.someMeth1();
 
 
     }
