@@ -83,38 +83,26 @@ public class TextArrs {
     }
 
     //7. Найти слово, символы в котором идут в строгом порядке возрастания их кодов.Если таких слов несколько, найти первое из них.
-    public static String[] separateString(String str) {
-        String delimeter = " "; // Разделитель
-        String[] subStr = str.split(delimeter);
-        return subStr;
 
-    }
 
-    public static char[] toSymbolsWord(String str){
-        char[] str1 = str.toCharArray();
-        return str1;
 
-    }
 
-public void someMeth() {
-    for (int i = 0; i < arrayStrings.length; i++) {
-        String[] arrayOfchars = TextArrs.separateString(arrayStrings[i]); // слова в String
+    public void someMeth() {
+        for (int i = 0; i < arrayStrings.length; i++) {
+            String delimeter = " "; // Разделитель
+            String[] subStr = arrayStrings[i].split(delimeter);;
 
-        for (int j = 0; j < arrayOfchars.length; j++) {
-            char[] c = toSymbolsWord(arrayOfchars[j]);        //                  слова в массиве char
-            String s1 = arrayOfchars[j].concat(" - ");
-            System.out.print(" // "+s1); //
-            for (int k = 0; k < c.length; k++) {              //  вывел каждое слово отдельно
-                int charCode = (int) c[k];                    //
+            for (int j = 0; j < subStr.length; j++) {
+                char[] c = subStr[j].toCharArray();        //                  слова в массиве char
+               System.out.println("\n"+subStr[j]);
+                for (int k = 0; k < c.length; k++) {              //  вывел каждое слово отдельно
+                    int charCode = (int) c[k];                    //
 
                     System.out.print(charCode + " ");
 
 
-
+                }
             }
-
-//
-             }
         }
     }
 }
