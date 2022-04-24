@@ -1,4 +1,8 @@
 package org.temperature;
+import org.apache.commons.lang3.ArrayUtils;
+
+import java.util.Arrays;
+
 
 public class TextArrs {
 
@@ -87,40 +91,38 @@ public class TextArrs {
 
     public void someMeth() {
 
-        A:
+
         for (int i = 0; i < arrayStrings.length; i++) {
             String delimeter = " "; // Разделитель
-            String[] subStr = arrayStrings[i].split(delimeter); // разделил на слова в стринг
+            String[] words = arrayStrings[i].split(delimeter); // разделил на слова в стринг
 
-            B:
-            for (int j = 0; j < subStr.length; j++) {
-                char[] arr = subStr[j].toCharArray();        //                  слова в массиве char
 
-                C:
-                for (int k = 0; k < arr.length; k++) {
+            for (int j = 0; j < words.length; j++) {
+                char[] arrayOfwords = words[j].toCharArray();        //                  слова в массиве char
 
-                    int min = arr[k];
+
+                for (int k = 0; k < arrayOfwords.length; k++) {
+
+                    int min = arrayOfwords[k];
                     int min_i = k;
-                    D:
-                    for (int l = k + 1; l < arr.length; l++) {
-                        if (arr[l] < min) {
-                            min = arr[l];
+
+                    for (int l = k + 1; l < arrayOfwords.length; l++) {
+                        if (arrayOfwords[l] < min) {
+                            min = arrayOfwords[l];
                             min_i = l;
                         }
                     }
 
                     if (k != min_i) {
-                        char tmp = arr[k];
-                        arr[k] = arr[min_i];
-                        arr[min_i] = tmp;
+                        char tmp = arrayOfwords[k];
+                        arrayOfwords[k] = arrayOfwords[min_i];
+                        arrayOfwords[min_i] = tmp;
                     }
 
                 }
-                String strf = new String(arr);
-                if (strf.equals(subStr[j].trim()) && strf.length()>3) {
-                    System.out.println(strf);
-
-
+                String finalString = new String(arrayOfwords);
+                if (finalString.equals(words[j].trim()) && finalString.length() > 3) {
+                    System.out.println(finalString);
                 }
             }
         }
@@ -129,11 +131,12 @@ public class TextArrs {
     public void someMeth1() {
         for (int i = 0; i < arrayStrings.length; i++) {
             String delimeter = " "; // Разделитель
-            String[] subStr = arrayStrings[i].split(delimeter);;
+            String[] subStr = arrayStrings[i].split(delimeter);
+            ;
 
             for (int j = 0; j < subStr.length; j++) {
                 char[] c = subStr[j].toCharArray();        //                  слова в массиве char
-                System.out.println("\n"+subStr[j]);
+                System.out.println("\n" + subStr[j]);
                 for (int k = 0; k < c.length; k++) {              //  вывел каждое слово отдельно
                     int charCode = (int) c[k];                    //
 
@@ -144,7 +147,38 @@ public class TextArrs {
             }
         }
     } // просто вывод слов с кодами его чаров
+
+    //8. Найти слово, состоящее только из различных символов. Если таких слов несколько, найти первое из них.
+    public void findOriginalWord() {
+        
+        for (int i = 0; i < arrayStrings.length; i++) {
+            String delimeter = " "; // Разделитель
+            String[] words = arrayStrings[i].split(delimeter);
+            String formatString;
+
+            for (int j = 0; j < words.length; j++) {
+                char[] charsOfwords = words[j].toCharArray();
+
+                for (int k = 0; k < charsOfwords.length - 1; k++) {
+                    for (int l = k + 1; l < charsOfwords.length; l++) {
+                        if (charsOfwords[k] == charsOfwords[l]) {
+                            charsOfwords = ArrayUtils.remove(charsOfwords, l);
+                        }
+                    }
+                } formatString = new String(charsOfwords);
+                if (words[j].equals(formatString)){
+                    System.out.println(words[j]);
+                }
+            }
+        }
+    }
 }
+
+
+
+
+
+
 
 
 
@@ -155,7 +189,8 @@ class Realization1{
     public static void main(String[] args) {
 
     TextArrs t = new TextArrs();
-    t.someMeth();
+        t.findOriginalWord();
+        System.out.println();
         System.out.println("-----------------------------------------------------------------------------");
 
 
