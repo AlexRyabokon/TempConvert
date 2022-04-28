@@ -2,6 +2,7 @@ package org.temperature;
 import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.Arrays;
+import java.util.Locale;
 
 
 public class TextArrs {
@@ -155,24 +156,32 @@ public class TextArrs {
             String delimeter = " "; // Разделитель
             String[] words = arrayStrings[i].split(delimeter);
             String formatString;
+            char[] charsOfwords;
 
             for (int j = 0; j < words.length; j++) {
-                char[] charsOfwords = words[j].toCharArray();
+                charsOfwords = words[j].toCharArray();
 
                 for (int k = 0; k < charsOfwords.length - 1; k++) {
                     for (int l = k + 1; l < charsOfwords.length; l++) {
                         if (charsOfwords[k] == charsOfwords[l]) {
-                            charsOfwords = ArrayUtils.remove(charsOfwords, l);
+
+                            formatString = new String(charsOfwords);
+                            formatString = "                ";
+
+                            System.out.println(formatString);
                         }
                     }
-                } formatString = new String(charsOfwords);
-                if (words[j].equals(formatString)){
-                    System.out.println(words[j]);
+                }
+                if (!words[j].equals(charsOfwords)) {
+                    System.out.println("Слово с оригинальными символами  " + words[j]);
+                    break;
+                }
+
                 }
             }
         }
     }
-}
+
 
 
 
