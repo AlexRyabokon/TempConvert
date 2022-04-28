@@ -2,11 +2,10 @@ package org.except.homework;
 
 public class App {
     public static void main(String[] args) {
-        UserAuthenticator user = new UserAuthenticator("qwetye", "4ww44", "4ww44");
-
+      UserAuthenticator user = new UserAuthenticator();
         try {
-            user.setLogin();
-        } catch (UserAuthExeption e) {
+            user.loginException();
+        } catch (WrongLoginException e) {
             e.printStackTrace();
         }
 
@@ -16,7 +15,6 @@ public class App {
             e.printStackTrace();
         }
 
-        user.getAllInfo();
 
     }
 }
