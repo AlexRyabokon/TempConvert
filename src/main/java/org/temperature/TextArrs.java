@@ -7,8 +7,8 @@ import java.util.Locale;
 
 public class TextArrs {
 
-    public String[] arrayStrings = {"Отец мой Андрей Петрович Гринев",                                                                      //0
-            "паче всякого чаяния матушка родила дочь, то батюшка объявил бы куда следовало о смерти",                                //1
+    public String[] arrayStrings = {"Отец мой Андрей Петрович Гринев яваавя texttxet",                                                                      //0
+            "паче всякого чаяния матушка родила дочь, то батюшка объявил бы куда следовало о смерти trannart",                                //1
             "С пятилетнего возраста отдан я был на руки стремянному Савельичу, за трезвое поведение",                                //2
             "Бопре, принялся за работу",                                                                                             //3
             "Прачка Палашка, толстая и рябая девка",                                                                                 //4
@@ -23,7 +23,7 @@ public class TextArrs {
     public double av = averageStrLength();
 
     //4. Найти самую короткую и самую длинную строки. Вывести найденные строки и их длину.
-    public void sravn() {
+    public void compareOfString() {
 
         String stringMax = arrayStrings[0];
         String stringMin = arrayStrings[0];
@@ -91,7 +91,6 @@ public class TextArrs {
 
 
     public void someMeth() {
-
 
         for (int i = 0; i < arrayStrings.length; i++) {
             String delimeter = " "; // Разделитель
@@ -180,15 +179,32 @@ public class TextArrs {
                 }
             }
         }
-    }
+//9. Найти все слова-палиндромы. Если таких слов больше одного, найти второе из них.
+            public static boolean isPalindrome(String text) {
+
+                StringBuilder strBuilder = new StringBuilder(text);
+                strBuilder.reverse(); //переворачиваем строку
+                String invertedText = strBuilder.toString();//присваиваем перевернутую строку
+                return text.equalsIgnoreCase(invertedText);//возвращаем сравнение двух строк вне зависимости от регистра
+            }
+
+            public void findAndShowPalindrome(){
+                for (int i = 0; i < arrayStrings.length; i++) {
+                    String delimeter = " "; // Разделитель
+                    String[] words = arrayStrings[i].split(delimeter); // разделил на слова в стринг
+
+                    for (int j = 0; j < words.length; j++) {
+
+                        if (TextArrs.isPalindrome(words[j]) && words[j].length()>=3){
+                            System.out.println("Palindrom is:  " + words[j]);
+                        }
+
+                    }
+                }
+            }
 
 
-
-
-
-
-
-
+}
 
 
 
@@ -197,13 +213,15 @@ class Realization1{
 
     public static void main(String[] args) {
 
-    TextArrs t = new TextArrs();
-        t.findOriginalWord();
-        System.out.println();
-        System.out.println("-----------------------------------------------------------------------------");
+        TextArrs t = new TextArrs();
+        t.findAndShowPalindrome();
+
+            System.out.println();
+            System.out.println("-----------------------------------------------------------------------------");
 
 
 
-    }
 
 }
+}
+

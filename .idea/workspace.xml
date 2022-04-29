@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59203173-1636-45a4-8f64-0c5ff6e1e16d" name="Changes" comment="new commit">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempConvert.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/temperature/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/temperature/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/temperature/SomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/temperature/SomeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/temperature/TextArrs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/temperature/TextArrs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/temperature/Realization1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/temperature/Realization1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/temperature/TextArrs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/temperature/TextArrs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/except/homework/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/except/homework/App.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +38,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="28D6iX8sck5jy4fllcpWZDoYZnr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,7 +54,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.Realization1">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.except.homework.App" />
       <module name="TempConvert" />
@@ -102,22 +94,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="Application.Realization1" />
         <item itemvalue="Application.rlzt" />
+        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650824970189</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new commit">
+      <created>1651182736567</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651182736567</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new commit">
+      <created>1651182835122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651182835122</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +145,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new commit" />
@@ -160,8 +156,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/temperature/SomeTest.java</url>
-          <line>6</line>
+          <line>17</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/temperature/TextArrs.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
