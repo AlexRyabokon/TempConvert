@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59203173-1636-45a4-8f64-0c5ff6e1e16d" name="Changes" comment="new commit">
+    <list default="true" id="59203173-1636-45a4-8f64-0c5ff6e1e16d" name="Changes" comment="new1 commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TempConvert.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/temperature/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/temperature/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/except/homework/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/except/homework/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/temperature/SomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/temperature/SomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/temperature/StringHomework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/temperature/StringHomework.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/temperature/TextArrs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/temperature/TextArrs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/except/homework/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/except/homework/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/temperature/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/temperature/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/temperature/Realization1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/temperature/Realization1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/temperature/SomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/temperature/SomeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/temperature/TextArrs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/temperature/TextArrs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/temperature/rlzt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/temperature/rlzt.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +58,39 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Realization1">
+  <component name="RunManager" selected="Application.Realization">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.except.homework.App" />
       <module name="TempConvert" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.except.homework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BullShitClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.temperature.BullShitClass" />
+      <module name="TempConvert" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.temperature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Realization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.temperature.Realization" />
+      <module name="TempConvert" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.temperature.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,9 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Realization1" />
-        <item itemvalue="Application.rlzt" />
+        <item itemvalue="Application.Realization" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.Realization1" />
+        <item itemvalue="Application.BullShitClass" />
+        <item itemvalue="Application.rlzt" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651182835122</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new1 commit">
+      <created>1651353824720</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651353824720</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,20 +188,34 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="new commit" />
+    <MESSAGE value="new1 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="new1 commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/temperature/SomeTest.java</url>
-          <line>17</line>
+          <line>9</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/temperature/TextArrs.java</url>
-          <line>27</line>
+          <line>26</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/temperature/TextArrs.java</url>
+          <line>191</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/temperature/TextArrs.java</url>
+          <line>97</line>
+          <properties class="org.temperature.TextArrs" method="someMeth">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

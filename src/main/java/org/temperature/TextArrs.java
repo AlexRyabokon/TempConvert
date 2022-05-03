@@ -1,8 +1,7 @@
 package org.temperature;
-import org.apache.commons.lang3.ArrayUtils;
 
+import javax.swing.plaf.IconUIResource;
 import java.util.Arrays;
-import java.util.Locale;
 
 
 public class TextArrs {
@@ -20,7 +19,7 @@ public class TextArrs {
             "На другой день поутру подвезена была к крыльцу дорожная кибитка"                                                        //10
     };
 
-    public double av = averageStrLength();
+   public double av = averageStrLength();
 
     //4. Найти самую короткую и самую длинную строки. Вывести найденные строки и их длину.
     public void compareOfString() {
@@ -64,12 +63,18 @@ public class TextArrs {
 
     // 6. Вывести на консоль те строки, длина которых меньше (больше) средней арифметической всех длин строк в массиве, а также длину.
     public double averageStrLength() {
-        double average = (arrayStrings[0].length() + arrayStrings[1].length() + arrayStrings[2].length() +
-                arrayStrings[3].length() + arrayStrings[4].length() +
-                arrayStrings[5].length() +
-                arrayStrings[6].length() + arrayStrings[7].length() +
-                arrayStrings[8].length() + arrayStrings[9].length() +
-                arrayStrings[10].length()) / arrayStrings.length;
+
+      double average = (arrayStrings[0].length() +
+             arrayStrings[1].length() +
+             arrayStrings[2].length() +
+             arrayStrings[3].length() +
+             arrayStrings[4].length() +
+             arrayStrings[5].length() +
+             arrayStrings[6].length() +
+             arrayStrings[7].length() +
+             arrayStrings[8].length() +
+             arrayStrings[9].length() +
+             arrayStrings[10].length()) / arrayStrings.length;
         return average;
     }
 
@@ -149,8 +154,9 @@ public class TextArrs {
     } // просто вывод слов с кодами его чаров
 
     //8. Найти слово, состоящее только из различных символов. Если таких слов несколько, найти первое из них.
-    public void findOriginalWord() {
-        
+    public String findOriginalWord() {
+
+        String originWord = null;
         for (int i = 0; i < arrayStrings.length; i++) {
             String delimeter = " "; // Разделитель
             String[] words = arrayStrings[i].split(delimeter);
@@ -171,13 +177,14 @@ public class TextArrs {
                         }
                     }
                 }
-                if (!words[j].equals(charsOfwords)) {
-                    System.out.println("Слово с оригинальными символами  " + words[j]);
+                if (!words[j].equals(charsOfwords)&&words[j].length()>=3) {
+                    originWord = words[j];
+                   // System.out.println("Слово с оригинальными символами  " + words[j]);
                     break;
                 }
 
                 }
-            }
+            } return originWord;
         }
 //9. Найти все слова-палиндромы. Если таких слов больше одного, найти второе из них.
             public static boolean isPalindrome(String text) {
@@ -204,6 +211,41 @@ public class TextArrs {
             }
 
 
+
+/*13. Найти слово, в котором число различных символов минимально. Если таких слов несколько, найти первое из них. Словом считается фраза более 3-х символов.      */
+    private static int diffWords(String st){ // число уникальных символов
+        StringBuffer u = new StringBuffer(); // строка, в которой каждый символ будет содержаться лишь однажды
+        String c; // текущий символ в строке
+        for (int i=0;i<st.length();i++) { // обход строки
+            c = String.valueOf(st.charAt(i)); // получить текущий символ
+            if (u.indexOf(c)==-1) // символ еще не встречался
+                u.append(c); // добавляем
+        }
+
+        return u.length(); // возвращаем длину получившейся строки
+    }
+
+    public static void findMinLength(String[] stringArr) {
+
+
+        for (int i = 0; i < stringArr.length; i++) {
+            String delimeter = " "; // Разделитель
+            String[] words = stringArr[i].split(delimeter);
+            // разделил на слова в стринг
+            for (int j = 0; j < words.length; j++) {        // имеем каждое отдельное слово
+                String goal = words[0];
+                System.out.println(words[j]+ " , ");
+                System.out.println();
+                if (diffWords(words[j])<diffWords(goal)){
+                    goal = words[j];
+                }
+                System.out.println("");
+                System.out.println("Искомое слово: "+goal+", число разных символов: "+diffWords(goal));
+            }
+        }
+
+    }
+
 }
 
 
@@ -214,7 +256,9 @@ class Realization1{
     public static void main(String[] args) {
 
         TextArrs t = new TextArrs();
-        t.findAndShowPalindrome();
+
+
+
 
             System.out.println();
             System.out.println("-----------------------------------------------------------------------------");

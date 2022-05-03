@@ -3,25 +3,29 @@ package org.temperature;
 public class SomeTest {
 
 
-          public static boolean isPalindrome(String text) {
-              text = text.replaceAll("\\W", " ");//удаляем все ненужное
-              StringBuilder strBuilder = new StringBuilder(text);
-              strBuilder.reverse(); //переворачиваем строку
-              String invertedText = strBuilder.toString();//присваиваем перевернутую строку
-              System.out.println(invertedText);
-              System.out.println(text.equalsIgnoreCase(invertedText));
-              return text.equalsIgnoreCase(invertedText);//возвращаем сравнение двух строк вне зависимости от регистра
 
-
-          }
 
 }
 
+
+
 class rlzt {
     public static void main(String[] args) {
+int a=1;
+int c=1;
+int b = -2;
+double x;
+double D = (Math.pow(b, 2)) + 4*(a+c);
 
-        String str = new String("someegmos");
+        double D1 = Math.sqrt(D);
 
-        SomeTest.isPalindrome(str);
+        x = ((b + D1)/2*a);
+
+
+        System.out.println(x);
+
+
+
+
     }
 }
