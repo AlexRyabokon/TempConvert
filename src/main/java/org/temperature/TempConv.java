@@ -16,6 +16,7 @@ public class TempConv {
     // Constructor
 
     public TempConv(double chislo, char idTemp) {
+
         this.chislo = chislo;
         this.countOfTemperatures(idTemp);
     }

@@ -4,22 +4,31 @@ import java.util.InputMismatchException;
 
 public class App {
     public static void main(String[] args) {
-     // UserAuthenticator user = new UserAuthenticator();
-       /* try {
-            user.loginException();
-        } catch (WrongLoginException e) {
-            e.printStackTrace();
-        }
+      UserAuthenticator user = new UserAuthenticator();
+      boolean someError;
 
-        try {
-            user.setPassword();
-        } catch (WrongPasswordException e) {
-            e.printStackTrace();
+      do {
+          someError = false;
+          try {
+              user.loginException();
+          } catch (WrongLoginException e) {
+              someError = true;
+              e.printStackTrace();
+              UserAuthenticator.registerForm();
+          }
 
-        }
-*/
+          try {
+              user.setPassword();
 
-        ArraysExc ar = new ArraysExc();
+          } catch (WrongPasswordException e) {
+              someError = true;
+              e.printStackTrace();
+              UserAuthenticator.registerForm();
+
+          }
+      }while (someError == true);
+
+       /* ArraysExc ar = new ArraysExc();
         try {
             ar.getIntFromArr();
         } catch (ArrayIndexOutOfBoundsException e) {
@@ -28,8 +37,7 @@ public class App {
             System.out.println("You put NULL");
         } catch (InputMismatchException e){
             System.out.println("Vvedite chislo");
-
-        }
+        }*/
 
 
     }

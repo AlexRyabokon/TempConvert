@@ -20,7 +20,7 @@ public class WrongIndex extends Exception{
         super(message, cause, enableSuppression, writableStackTrace);
     }
 
-    public void printStackTrace(int q) {
+    public void printStackTrace() {
         System.out.println("Введите число от ноля до десяти");
     }
 }
