@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59203173-1636-45a4-8f64-0c5ff6e1e16d" name="Changes" comment="checkHW commit">
+    <list default="true" id="59203173-1636-45a4-8f64-0c5ff6e1e16d" name="Changes" comment="new theme commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/except/homework/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/except/homework/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/except/homework/WrongIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/except/homework/WrongIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/temperature/TempConv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/temperature/TempConv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/newtheme/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/newtheme/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/except/homework/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/except/homework/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/except/homework/WrongIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/except/homework/WrongIndex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/temperature/TempConv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/temperature/TempConv.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.App (1)">
+  <component name="RunManager" selected="Application.real">
     <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.newtheme.App" />
       <module name="TempConvert" />
@@ -79,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Realization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.temperature.Realization" />
+    <configuration name="real" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.newtheme.real" />
       <module name="TempConvert" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.temperature.*" />
+          <option name="PATTERN" value="org.newtheme.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Realization1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.temperature.Realization1" />
+    <configuration name="realization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.newtheme.realization" />
       <module name="TempConvert" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.temperature.*" />
+          <option name="PATTERN" value="org.newtheme.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.real" />
+        <item itemvalue="Application.realization" />
         <item itemvalue="Application.App (1)" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.rlzt" />
-        <item itemvalue="Application.Realization" />
-        <item itemvalue="Application.Realization1" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651593592872</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new theme commit">
+      <created>1651782308234</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651782308234</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +199,8 @@
     <MESSAGE value="new commit" />
     <MESSAGE value="new1 commit" />
     <MESSAGE value="checkHW commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkHW commit" />
+    <MESSAGE value="new theme commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="new theme commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -9,8 +9,8 @@ public class App {
         ToDoList appList = new ToDoList();
         ToDoList.printOut();
         int param = scan.nextInt();
-        while (param!=0){
-            switch (param){
+        while (param != 0) {
+            switch (param) {
                 case 1:
                     System.out.println("add a new item into toDoList");
                     scan.nextLine();
@@ -47,7 +47,7 @@ public class App {
                     System.out.println("Enter the number of list to get info about task priority");
                     scan.nextLine();
                     String task5 = scan.nextLine();
-                    System.out.println("Priopity of te task is --- " +  appList.getTaskPriority(task5) );
+                    System.out.println("Priopity of te task is --- " + appList.getTaskPriority(task5));
                     param = scan.nextInt();
                     break;
                 case 6:
@@ -55,8 +55,9 @@ public class App {
                     scan.nextLine();
                     int index = scan.nextInt();
                     System.out.println("Please, enter a new task");
-                   String task6 = scan.nextLine();
-                   appList.changeTast(index, task6);
+                    scan.nextLine();
+                    String task6 = scan.nextLine();
+                    appList.changeTast(index, task6);
                     param = scan.nextInt();
                     break;
                 default:
