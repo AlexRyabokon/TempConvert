@@ -6,14 +6,14 @@ import java.util.LinkedList;
 public class CollectionsTasks {
 
     /*
-    * 1) Напишите метод, который добавляет 1000000 элементов в ArrayList и LinkedList (+). Напишите еще один метод, который
+    * 2.2.) Напишите метод, который добавляет 1000000 элементов в ArrayList и LinkedList (+). Напишите еще один метод, который
     * выбирает из заполненного списка элемент наугад 100000 раз. Замерьте время, которое потрачено на это. Сравните результаты и предположите, почему они именно такие.
     */
 
    public  ArrayList<Integer> arList = new ArrayList<>();
    public  LinkedList<Integer> linkList = new LinkedList<>();
 
-    public static void addElements(ArrayList<Integer> someArrayList, LinkedList<Integer> someLinkList){
+    public static void addAndCountTime(ArrayList<Integer> someArrayList, LinkedList<Integer> someLinkList){
         int A = 1000001;
         int B = 100000;
 
@@ -21,15 +21,21 @@ public class CollectionsTasks {
 
             someArrayList.add((int) (Math.random()*100000));
             someLinkList.add((int) (Math.random()*100000));
-            System.out.print("Element of -AL- #"+i+" --- "+someArrayList.get(i) + "\n");
-            System.out.print("Element of -LL- #"+i+" --- "+someLinkList.get(i)  + "\n");
+
 
             }
 
+        long startTime = System.currentTimeMillis();
         for (int i = (int) (Math.random()*100000); i < B; i++) {
-            System.out.print("-AL- #"+i+" --- "+someArrayList.get(i) + "\n");
-            System.out.print("-LL- #"+i+" --- "+someLinkList.get(i)  + "\n");
+          someArrayList.get(i);
         }
+        System.out.println(System.currentTimeMillis() - startTime);
+
+        startTime = System.currentTimeMillis();
+        for (int i = (int) (Math.random()*100000); i < B; i++) {
+        someLinkList.get(i);
+        }
+        System.out.println(System.currentTimeMillis() - startTime);
 
         }
 /*
@@ -69,7 +75,9 @@ class real{
     public static void main(String[] args) {
 
             CollectionsTasks task = new CollectionsTasks();
-
+            ArrayList<Integer> ArL = new ArrayList<>();
+            LinkedList<Integer> LinkL = new LinkedList<>();
+            CollectionsTasks.addAndCountTime(ArL, LinkL);
 
     }
 }
