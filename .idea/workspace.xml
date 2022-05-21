@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="59203173-1636-45a4-8f64-0c5ff6e1e16d" name="Changes" comment="new theme commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/newtheme/CollectionsTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/newtheme/CollectionsTasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/newtheme/CollectionsTasks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/newtheme/CollectionsTasks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/newtheme/real.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/newtheme/real.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +51,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.ListObjRealization">
-    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.newtheme.App" />
+  <component name="RunManager" selected="Application.UserRealization">
+    <configuration name="ListObjRealization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.newtheme.ListObjRealization" />
       <module name="TempConvert" />
       <extension name="coverage">
         <pattern>
@@ -64,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.except.homework.App" />
+    <configuration name="MapWorkRealization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.newtheme.MapWorkRealization" />
       <module name="TempConvert" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.except.homework.*" />
+          <option name="PATTERN" value="org.newtheme.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,8 +78,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListObjRealization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.newtheme.ListObjRealization" />
+    <configuration name="UserRealization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.newtheme.UserRealization" />
       <module name="TempConvert" />
       <extension name="coverage">
         <pattern>
@@ -118,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserRealization" />
+        <item itemvalue="Application.MapWorkRealization" />
         <item itemvalue="Application.ListObjRealization" />
         <item itemvalue="Application.real" />
         <item itemvalue="Application.realization" />
-        <item itemvalue="Application.App (1)" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651782308234</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="new theme commit">
+      <created>1652984787927</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652984787927</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
